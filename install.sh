@@ -153,7 +153,7 @@ function setup_system_logs() {
 
 function finish_install() {
   router_ip="$(ifconfig br-lan | grep 'inet addr:' | awk '{print $2}' | awk -F ':' '{print $2}')"
-  echo -e "Libernet successfully installed!\nLibernet URL: http://${router_ip}/libernet"
+  echo -e "Libernet successfully installed!\nLibernet URL: http://${router_ip}/libernet username: admin password: libernet"
 }
 
 function main_installer() {
