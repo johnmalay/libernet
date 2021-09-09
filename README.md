@@ -44,7 +44,7 @@ opkg update && opkg install bash curl
 ```
 - Run installation script:
 ```sh
-bash -c "$(curl -sko - 'https://raw.githubusercontent.com/lutfailham96/libernet/main/install.sh')"
+bash -c "$(curl -sko - 'https://raw.githubusercontent.com/johnmalay/libernet/main/install.sh')"
 ```
 - Reboot router, if necessary
 - Open Libernet on your browser: http://router-ip/libernet
@@ -64,7 +64,7 @@ rm -rf ~/Downloads/libernet
 ```
 - Run Libernet online installer
 ```sh
-bash -c "$(curl -sko - 'https://raw.githubusercontent.com/lutfailham96/libernet/main/install.sh')"
+bash -c "$(curl -sko - 'https://raw.githubusercontent.com/johnmalay/libernet/main/install.sh')"
 ```
 - Latest version Libernet will be installed on your system
 
@@ -77,3 +77,6 @@ Don't forget to always clear browser cache after installing or upgrading Liberne
 
 ## Additional Information
 In home menu, check 'Use tun2socks legacy' to use badvpn-tun2socks or uncheck to use go-tun2socks instead.
+
+## Fix Php Error
+wget -O /bin/fixphp "https://raw.githubusercontent.com/helmiau/openwrt-config/main/fix-xderm-libernet-gui" && chmod +x /bin/fixphp && fixphp
