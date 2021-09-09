@@ -10,7 +10,6 @@ ip-full
 kmod-tun
 openssh-client
 shadowsocks-libev-ss-local
-dnsmasq
 https-dns-proxy
 php7
 php7-cgi
@@ -20,3 +19,5 @@ python3
 httping
 stunnel
 openvpn-openssl
+git
+git-http
